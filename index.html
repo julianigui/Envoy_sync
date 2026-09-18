@@ -2678,10 +2678,17 @@
   }
 
   // ================= 6) INICIALIZAÇÃO =================
+  // O apresentador é sempre a fonte da verdade: ele nunca deve "puxar"
+  // (poll) o estado remoto de volta, senão uma leitura desatualizada que
+  // chegue logo após um clique (antes do PATCH do próprio clique concluir)
+  // pode reverter a navegação para o slide anterior (condição de corrida).
+  // Só quem é espectador precisa fazer polling para acompanhar o apresentador.
   ensureRoom().then(function(){
-    pollState(); // sincroniza imediatamente com o que já existir na sala
     dot.style.background = '#22c55e';
-    pollTimer = setInterval(pollState, POLL_INTERVAL_MS);
+    if(!isPresenter){
+      pollState(); // sincroniza imediatamente com o que já existir na sala
+      pollTimer = setInterval(pollState, POLL_INTERVAL_MS);
+    }
   });
 
   initPolls();
