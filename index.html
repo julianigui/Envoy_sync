@@ -1192,6 +1192,42 @@
   }
 
   /* ===== ENQUETE AO VIVO (adicionado, não altera regras existentes) ===== */
+
+  .poll-box.poll-fill{
+    top:0;
+    bottom:0;
+    align-items:center;
+  }
+  .poll-box.poll-fill .poll-inner{
+    width:min(92%,900px);
+    padding:40px 56px 34px;
+  }
+  .poll-box.poll-fill .poll-title{
+    font-size:20px;
+    margin-bottom:26px;
+  }
+  .poll-box.poll-fill .poll-option{
+    margin-bottom:20px;
+    border-radius:16px;
+  }
+  .poll-box.poll-fill .poll-option-content{
+    padding:24px 30px;
+  }
+  .poll-box.poll-fill .poll-option-label{
+    font-size:24px;
+  }
+  .poll-box.poll-fill .poll-option-count{
+    font-size:19px;
+  }
+  .poll-box.poll-fill .poll-total-line{
+    margin-top:20px;
+    font-size:16px;
+  }
+  @media (max-width:820px){
+    .poll-box.poll-fill .poll-option-label{font-size:17px;}
+    .poll-box.poll-fill .poll-title{font-size:16px;}
+  }
+
   .poll-box{
     position:absolute;
     top:clamp(78px,13vh,118px);
@@ -1311,6 +1347,7 @@
 
     <!-- SLIDE 1 -->
     <!-- SLIDE 1 (NOVO) -->
+    <!-- SLIDE 1 -->
     <!-- SLIDE 1 -->
     <section class="slide active" data-slide="1">
       <img class="slide-bg-media" src="" alt="">
@@ -1459,51 +1496,6 @@
       </div>
 
       <div class="slide-body">
-        <div class="badge"><span class="dot"></span>APLICAÇÃO</div>
-        <h1 class="slide-title">Aplicação de IA para mudar o jogo!</h1>
-
-        <div class="quote-card">
-          <div class="quote-icon">&#10022;</div>
-          <div class="quote-text">"Quando o assunto é tecnologia, a maioria das pessoas não sabe o que quer, mas quer o que não sabe."</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SLIDE 7 -->
-    <section class="slide" data-slide="7">
-      <img class="slide-bg-media" src="" alt="">
-      <div class="top-row">
-        <div class="logo-group"><div class="logo"><img class="logo-img" src="" alt="Envoy"></div><span class="logo-tagline">Escola da nova logística</span></div>
-        <div class="slide-counter">Slide 7 de 24</div>
-      </div>
-
-      <div class="slide-body">
-        <div class="badge"><span class="dot"></span>PRIORIDADE</div>
-        <h1 class="slide-title">Tecnologia (ou IA) = Investimento</h1>
-        <p class="slide-subtitle">Mas Como Definir Prioridades?</p>
-
-        <div class="split-grid">
-          <div class="split-card">
-            <div class="split-label cyan">O DESAFIO</div>
-            <div class="split-desc">Superar o ruído e focar no que gera valor real.</div>
-          </div>
-          <div class="split-card">
-            <div class="split-label purple">O OBJETIVO DE HOJE</div>
-            <div class="split-desc">Construir uma jornada prática para definir onde e como gastar energia.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SLIDE 8 -->
-    <section class="slide" data-slide="8">
-      <img class="slide-bg-media" src="" alt="">
-      <div class="top-row">
-        <div class="logo-group"><div class="logo"><img class="logo-img" src="" alt="Envoy"></div><span class="logo-tagline">Escola da nova logística</span></div>
-        <div class="slide-counter">Slide 8 de 24</div>
-      </div>
-
-      <div class="slide-body">
         <div class="badge"><span class="dot"></span>ESTUDO DE CASO</div>
         <h1 class="slide-title">O Caso Blockbuster: O Diagnóstico Tradicional</h1>
         <p class="lead-text" style="max-width:1400px;">Sim, eles perderam a chance de comprar a Netflix por uma pechincha. Mas o mercado diz que a Blockbuster faliu por causa de:</p>
@@ -1518,12 +1510,12 @@
       </div>
     </section>
 
-    <!-- SLIDE 9 -->
-    <section class="slide" data-slide="9">
+    <!-- SLIDE 7 -->
+    <section class="slide" data-slide="7">
       <img class="slide-bg-media" src="" alt="">
       <div class="top-row">
         <div class="logo-group"><div class="logo"><img class="logo-img" src="" alt="Envoy"></div><span class="logo-tagline">Escola da nova logística</span></div>
-        <div class="slide-counter">Slide 9 de 24</div>
+        <div class="slide-counter">Slide 7 de 24</div>
       </div>
 
       <div class="slide-body">
@@ -1539,15 +1531,15 @@
       </div>
     </section>
 
-    <!-- SLIDE 10 -->
-    <section class="slide" data-slide="10">
+    <!-- SLIDE 8 -->
+    <section class="slide" data-slide="8">
       <img class="slide-bg-media" src="" alt="">
       <div class="top-row">
         <div class="logo-group"><div class="logo"><img class="logo-img" src="" alt="Envoy"></div><span class="logo-tagline">Escola da nova logística</span></div>
-        <div class="slide-counter">Slide 10 de 24</div>
+        <div class="slide-counter">Slide 8 de 24</div>
       </div>
 
-      <div class="poll-box" data-poll-id="sintese-diferenciacao">
+      <div class="poll-box poll-fill" data-poll-id="sintese-diferenciacao">
         <div class="poll-inner">
           <div class="poll-title">Enquete rápida</div>
           <button class="poll-option" type="button" data-option="a">
@@ -1569,12 +1561,12 @@
       </div>
     </section>
 
-    <!-- SLIDE 11 -->
-    <section class="slide" data-slide="11">
+    <!-- SLIDE 9 -->
+    <section class="slide" data-slide="9">
       <img class="slide-bg-media" src="" alt="">
       <div class="top-row">
         <div class="logo-group"><div class="logo"><img class="logo-img" src="" alt="Envoy"></div><span class="logo-tagline">Escola da nova logística</span></div>
-        <div class="slide-counter">Slide 11 de 24</div>
+        <div class="slide-counter">Slide 9 de 24</div>
       </div>
 
       <div class="slide-body" style="justify-content:center; align-items:center; text-align:center;">
@@ -1586,16 +1578,16 @@
         </div>
 
         <div class="center-line">O mercado não se atualizou: ele se transformou por completo.</div>
-        <div class="lesson-highlight"><p><strong>Lição para nós:</strong> transporte do ponto A para B virou Commodity, o hábito dos clientes está mudando e nós precisamos acompanhar!</p></div>
+        <div class="lesson-highlight" data-reveal="1"><p><strong>Lição para nós:</strong> transporte do ponto A para B virou Commodity, o hábito dos clientes está mudando e nós precisamos acompanhar!</p></div>
       </div>
     </section>
 
-    <!-- SLIDE 12 -->
-    <section class="slide" data-slide="12">
+    <!-- SLIDE 10 -->
+    <section class="slide" data-slide="10">
       <img class="slide-bg-media" src="" alt="">
       <div class="top-row">
         <div class="logo-group"><div class="logo"><img class="logo-img" src="" alt="Envoy"></div><span class="logo-tagline">Escola da nova logística</span></div>
-        <div class="slide-counter">Slide 12 de 24</div>
+        <div class="slide-counter">Slide 10 de 24</div>
       </div>
 
       <div class="slide-body">
@@ -1615,12 +1607,12 @@
       </div>
     </section>
 
-    <!-- SLIDE 13 -->
-    <section class="slide" data-slide="13">
+    <!-- SLIDE 11 -->
+    <section class="slide" data-slide="11">
       <img class="slide-bg-media" src="" alt="">
       <div class="top-row">
         <div class="logo-group"><div class="logo"><img class="logo-img" src="" alt="Envoy"></div><span class="logo-tagline">Escola da nova logística</span></div>
-        <div class="slide-counter">Slide 13 de 24</div>
+        <div class="slide-counter">Slide 11 de 24</div>
       </div>
 
       <div class="slide-body">
@@ -1672,6 +1664,49 @@
         </div>
 
         <div class="sparkle-bar" data-reveal="3"><span class="sp-icon">&#10024;</span><span><strong>Velocidade resolve a tarefa.</strong> Contexto transforma a decisão.</span></div>
+      </div>
+    </section>
+
+    <!-- SLIDE 12 -->
+    <section class="slide" data-slide="12">
+      <img class="slide-bg-media" src="" alt="">
+      <div class="top-row">
+        <div class="logo-group"><div class="logo"><img class="logo-img" src="" alt="Envoy"></div><span class="logo-tagline">Escola da nova logística</span></div>
+        <div class="slide-counter">Slide 12 de 24</div>
+      </div>
+
+      <div class="slide-body">
+        <div class="badge"><span class="dot"></span>APLICAÇÃO</div>
+        <div class="quote-card">
+          <div class="quote-icon">&#10022;</div>
+          <div class="quote-text">"Quando o assunto é tecnologia, a maioria das pessoas não sabe o que quer, mas quer o que não sabe."</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 13 -->
+    <section class="slide" data-slide="13">
+      <img class="slide-bg-media" src="" alt="">
+      <div class="top-row">
+        <div class="logo-group"><div class="logo"><img class="logo-img" src="" alt="Envoy"></div><span class="logo-tagline">Escola da nova logística</span></div>
+        <div class="slide-counter">Slide 13 de 24</div>
+      </div>
+
+      <div class="slide-body">
+        <div class="badge"><span class="dot"></span>PRIORIDADE</div>
+        <h1 class="slide-title">Tecnologia (ou IA) = Investimento</h1>
+        <p class="slide-subtitle">Mas Como Definir Prioridades?</p>
+
+        <div class="split-grid">
+          <div class="split-card">
+            <div class="split-label cyan">O DESAFIO</div>
+            <div class="split-desc">Superar o ruído e focar no que gera valor real.</div>
+          </div>
+          <div class="split-card">
+            <div class="split-label purple">O OBJETIVO DE HOJE</div>
+            <div class="split-desc">Construir uma jornada prática para definir onde e como gastar energia.</div>
+          </div>
+        </div>
       </div>
     </section>
 
