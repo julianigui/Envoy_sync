@@ -2161,14 +2161,14 @@
     updateAutoplayVideo();
   }
 
-  // Toca automaticamente o vídeo do slide 4 assim que ele é exibido
+  // Toca automaticamente o vídeo do slide 5 assim que ele é exibido
   // (mudo, pois navegadores bloqueiam autoplay com som sem interação prévia)
   // e pausa/reseta ao sair do slide, para funcionar tanto na navegação do
   // apresentador quanto na sincronização remota dos espectadores.
   function updateAutoplayVideo(){
-    const videoIframe = document.querySelector('.slide[data-slide="4"] iframe[data-video-src]');
+    const videoIframe = document.querySelector('.slide[data-slide="5"] iframe[data-video-src]');
     if(!videoIframe) return;
-    if(current === 4){
+    if(current === 5){
       if(!videoIframe.getAttribute('src')){
         videoIframe.setAttribute('src', videoIframe.getAttribute('data-video-src') + '&autoplay=1&mute=1');
       }
